@@ -1,0 +1,39 @@
+.tarjeta{
+    text-align: center;
+    box-shadow: -1px 0px 5px black;
+    width: fit-content;
+    background: white;
+    padding: 40px 0px;
+    border-radius: 6px;
+}
+
+.contenedortarjetas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.tarjeta a {  /* Para que el boton read more quede en negro y subrayado*/
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.tarjeta h3{
+    font-style: italic; 
+}
+
+.tarjeta:hover{
+    background-color:coral;
+}
+
+@media (max-width: 800px) {
+    .contenedorTarjetas{
+        flex-direction: column;
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
+}
